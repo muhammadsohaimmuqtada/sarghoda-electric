@@ -4,36 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarghoda Electric and Electronics | Wan Bhachran, Mianwali</title>
-  <meta name="description" content="Sarghoda Electric and Electronics - Your trusted electrical, wiring, solar, fans, and home appliances store on Sarghoda-Mianwali Road, Wan Bhachran. Quality products at wholesale & retail prices.">
-  
+  <meta name="description" content="Sarghoda Electric and Electronics - Commercial supplier of 99.9% pure copper cables, inverter fans, solar inverters, circuit breakers, and industrial electrical switchgear on Sargodha-Mianwali Road, Wan Bhachran.">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Inter -->
+  <!-- Fonts: Inter & JetBrains Mono for technical specs -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
-            brand: {
-              50: '#eff6ff',
-              100: '#dbeafe',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8',
-              800: '#1e40af',
-              900: '#1e3a8a',
+            industrial: {
+              950: '#090d16',
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+              600: '#475569',
+              500: '#64748b',
+              300: '#cbd5e1',
+              200: '#e2e8f0',
+              100: '#f1f5f9',
+              50: '#f8fafc'
             },
-            amberBrand: '#f59e0b',
-            whatsapp: '#25D366'
+            amberSteel: '#d97706',
+            tradeAmber: '#f59e0b',
+            tradeGreen: '#15803d'
           }
         }
       }
@@ -41,185 +46,171 @@
   </script>
 
   <style>
-    .glass-card {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
+    /* Sharp, crisp industrial technical styling */
+    .tech-border {
+      border: 1px solid #e2e8f0;
+    }
+    .tech-border-dark {
+      border: 1px solid #334155;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased font-sans pb-16 md:pb-0">
+<body class="bg-slate-100 text-slate-900 antialiased font-sans pb-16 md:pb-0 selection:bg-amber-400 selection:text-slate-900">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-slate-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+  <!-- Top Technical Status Bar -->
+  <div class="bg-industrial-950 text-slate-300 text-xs py-2 px-4 border-b border-industrial-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold text-xs">
-          <i class="fa-solid fa-circle-check text-[10px]"></i> Verified Google Business
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 font-mono text-[11px] border border-emerald-800">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> VERIFIED GOOGLE BUSINESS
         </span>
-        <span class="hidden md:inline text-slate-400">|</span>
-        <span class="flex items-center gap-1 text-slate-300">
-          <i class="fa-solid fa-location-dot text-amberBrand"></i> Sarghoda-Mianwali Rd, Wan Bhachran
+        <span class="text-slate-500 hidden sm:inline">|</span>
+        <span class="text-slate-300 text-xs flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-amberSteel"></i>
+          <span>Sargodha-Mianwali Rd, Wan Bhachran, 42100</span>
         </span>
       </div>
-      <div class="flex items-center gap-4 text-xs font-medium">
-        <span class="text-slate-400"><i class="fa-regular fa-clock mr-1"></i> Open: 8:00 AM – 9:00 PM</span>
-        <a id="topPhoneLink" href="tel:+923016353217" class="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-semibold">
-          <i class="fa-solid fa-phone"></i> <span id="topPhoneText">Call Us</span>
+      <div class="flex items-center gap-4 text-xs font-mono">
+        <span class="text-slate-400"><i class="fa-regular fa-clock mr-1 text-slate-500"></i> HOURS: 08:00 - 21:00</span>
+        <a id="topPhoneLink" href="tel:+923016353217" class="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1">
+          <i class="fa-solid fa-phone text-xs"></i> <span>0301 6353217</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Main Navigation -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white border-b border-slate-300 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Logo / Name -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-blue-500 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-          <i class="fa-solid fa-bolt-lightning text-2xl text-amber-300"></i>
+      <!-- Logo & Industrial Identity -->
+      <a href="#" class="flex items-center gap-3.5">
+        <div class="w-11 h-11 bg-industrial-900 border border-industrial-700 flex items-center justify-center text-amber-400 font-mono font-bold text-lg rounded-sm shadow-sm">
+          <i class="fa-solid fa-bolt-lightning text-xl"></i>
         </div>
         <div>
-          <span class="block text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
+          <span class="block text-lg sm:text-xl font-extrabold uppercase tracking-tight text-industrial-950 leading-none">
             Sarghoda Electric
           </span>
-          <span class="block text-xs font-medium text-slate-500 tracking-wider uppercase">
-            & Electronics · Wan Bhachran
+          <span class="block text-[11px] font-mono tracking-wider uppercase text-slate-500 mt-1">
+            & Electronics · Wholesale & Retail Trade
           </span>
         </div>
       </a>
 
-      <!-- Desktop Links -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-        <a href="#catalog" class="hover:text-brand-600 transition-colors">Product Catalog</a>
-        <a href="#categories" class="hover:text-brand-600 transition-colors">Categories</a>
-        <a href="#why-us" class="hover:text-brand-600 transition-colors">Why Choose Us</a>
-        <a href="#location" class="hover:text-brand-600 transition-colors">Location & Hours</a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-700 font-mono">
+        <a href="#store-inventory" class="hover:text-industrial-950 hover:underline transition-colors">Catalog & Specs</a>
+        <a href="#facility-proof" class="hover:text-industrial-950 hover:underline transition-colors">Store & Stock</a>
+        <a href="#contractors" class="hover:text-industrial-950 hover:underline transition-colors">Contractor Supply</a>
+        <a href="#location-dispatch" class="hover:text-industrial-950 hover:underline transition-colors">Location & Hours</a>
       </nav>
 
-      <!-- Desktop Contact Actions -->
-      <div class="hidden md:flex items-center gap-3">
-        <a id="navWhatsappBtn" href="#" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-sm transition-all hover:shadow-emerald-600/25 hover:shadow-lg">
-          <i class="fa-brands fa-whatsapp text-lg"></i>
-          <span>WhatsApp Us</span>
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a id="navWhatsappBtn" href="https://wa.me/923016353217" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-mono text-xs font-bold uppercase tracking-wider rounded-sm transition-colors shadow-sm">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp Inquiry</span>
         </a>
-        <a id="navCallBtn" href="tel:+923016353217" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 hover:border-brand-600 hover:text-brand-600 font-semibold text-sm transition-colors">
-          <i class="fa-solid fa-phone"></i>
-          <span>Direct Call</span>
+        <a id="navCallBtn" href="tel:+923016353217" class="inline-flex items-center gap-2 px-4 py-2.5 bg-industrial-900 hover:bg-industrial-800 text-white font-mono text-xs font-bold uppercase tracking-wider rounded-sm transition-colors shadow-sm">
+          <i class="fa-solid fa-phone text-xs text-amber-400"></i>
+          <span>0301 6353217</span>
         </a>
       </div>
 
-      <!-- Mobile WhatsApp Quick Icon -->
-      <div class="flex md:hidden items-center gap-2">
-        <a id="mobileHeaderWhatsapp" href="#" target="_blank" class="p-2.5 rounded-lg bg-emerald-600 text-white text-base">
-          <i class="fa-brands fa-whatsapp"></i>
+      <!-- Mobile Fast Call / Chat -->
+      <div class="flex sm:hidden items-center gap-2">
+        <a id="mobileHeaderWhatsapp" href="https://wa.me/923016353217" target="_blank" class="p-2.5 bg-emerald-700 text-white rounded-sm">
+          <i class="fa-brands fa-whatsapp text-base"></i>
         </a>
-        <a id="mobileHeaderCall" href="tel:+923016353217" class="p-2.5 rounded-lg bg-brand-600 text-white text-base">
-          <i class="fa-solid fa-phone"></i>
+        <a id="mobileHeaderCall" href="tel:+923016353217" class="p-2.5 bg-industrial-900 text-amber-400 rounded-sm">
+          <i class="fa-solid fa-phone text-base"></i>
         </a>
       </div>
 
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
-    <!-- Subtle Background Glows -->
-    <div class="absolute -top-32 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <!-- Hero Section with REAL Physical Facility Photos -->
+  <section class="bg-industrial-950 text-white border-b border-industrial-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
+        <!-- Left: Industrial Value Statement -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold">
-            <i class="fa-solid fa-award text-amber-400"></i>
-            Premium Electrical & Electronics Store in Wan Bhachran
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-industrial-900 border border-industrial-700 font-mono text-xs text-amber-400 uppercase tracking-widest">
+            <span class="w-2 h-2 bg-amber-400 rounded-full"></span>
+            ELECTRICAL TRADE DISTRIBUTOR · WAN BHACHRAN
           </div>
 
-          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-            Original Electrical Goods, <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Guaranteed Quality</span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white leading-tight">
+            Commercial Electrical Supplies, <br class="hidden sm:inline">
+            <span class="text-amber-400">Copper Wiring & Power Systems</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Welcome to <strong class="text-white">Sarghoda Electric and Electronics</strong>. We supply 99.9% pure copper cables, energy-saving inverter fans, circuit breakers, solar & UPS inverters, modern switch plates, LED lighting, and appliances for homes and commercial projects.
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Direct distributor of 99.9% pure electrolytic copper cables, energy-efficient BLDC inverter fans, industrial switchgear, solar hybrid inverters, deep cycle tubular batteries, and distribution boards. Serving residential construction, commercial plazas, and certified electricians across Sargodha-Mianwali Road corridor.
           </p>
 
-          <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#catalog" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition-all flex items-center gap-2">
-              <i class="fa-solid fa-layer-group"></i> Browse Shop Products
+          <!-- Commercial Fast Action Group -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#store-inventory" class="px-5 py-3.5 bg-amberSteel hover:bg-amber-600 text-industrial-950 font-mono font-bold text-xs uppercase tracking-wider rounded-sm transition-colors flex items-center gap-2">
+              <i class="fa-solid fa-table-list"></i> View Technical Catalog
             </a>
-            <a id="heroWhatsappBtn" href="#" target="_blank" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 transition-all flex items-center gap-2">
-              <i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp
+            <a id="heroWhatsappBtn" href="https://wa.me/923016353217" target="_blank" class="px-5 py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white font-mono font-bold text-xs uppercase tracking-wider rounded-sm transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-base"></i> Direct WhatsApp Order / Quote
             </a>
           </div>
 
-          <!-- Quick Value Points -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-700/60 text-xs sm:text-sm text-slate-300">
-            <div class="flex items-center gap-2.5">
-              <i class="fa-solid fa-shield-check text-emerald-400 text-base"></i>
-              <span>100% Genuine Brands</span>
+          <!-- Trade Assurance Metrics Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-industrial-800 font-mono text-xs text-slate-300">
+            <div class="border-l-2 border-amberSteel pl-3">
+              <span class="block text-slate-400 text-[10px] uppercase">Conductor Standard</span>
+              <strong class="text-white text-xs sm:text-sm">99.9% Pure Copper</strong>
             </div>
-            <div class="flex items-center gap-2.5">
-              <i class="fa-solid fa-hand-holding-dollar text-amber-400 text-base"></i>
-              <span>Wholesale & Retail Rates</span>
+            <div class="border-l-2 border-emerald-600 pl-3">
+              <span class="block text-slate-400 text-[10px] uppercase">Pricing Tier</span>
+              <strong class="text-white text-xs sm:text-sm">Wholesale & Trade Rates</strong>
             </div>
-            <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
-              <i class="fa-solid fa-truck-fast text-blue-400 text-base"></i>
-              <span>Local Delivery & Pickup</span>
+            <div class="border-l-2 border-blue-500 pl-3 col-span-2 sm:col-span-1">
+              <span class="block text-slate-400 text-[10px] uppercase">Fulfillment</span>
+              <strong class="text-white text-xs sm:text-sm">Direct Counter Pickup</strong>
             </div>
           </div>
         </div>
 
-        <!-- Quick Info Box Card -->
+        <!-- Right: Real Storefront & Interior Photography Card -->
         <div class="lg:col-span-5">
-          <div class="bg-slate-800/80 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-slate-700 shadow-2xl relative">
-            <div class="flex items-center justify-between pb-4 border-b border-slate-700">
-              <div>
-                <h3 class="font-bold text-lg text-white">Visit Our Shop</h3>
-                <p class="text-xs text-slate-400">Conveniently located on main road</p>
-              </div>
-              <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open Today
-              </span>
-            </div>
-
-            <div class="space-y-4 py-5 text-sm">
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
-                  <i class="fa-solid fa-map-location-dot"></i>
-                </div>
+          <div class="bg-industrial-900 border border-industrial-700 p-2 rounded-sm shadow-xl">
+            <div class="relative overflow-hidden bg-black aspect-[4/3] rounded-sm border border-industrial-800">
+              <img 
+                src="images/unnamed2.jpg" 
+                alt="Sarghoda Electric and Electronics Store Interior and Inventory Counter" 
+                class="w-full h-full object-cover"
+                loading="eager"
+              >
+              <div class="absolute bottom-0 inset-x-0 bg-industrial-950/90 backdrop-blur-sm p-3 border-t border-industrial-700 text-xs font-mono flex items-center justify-between">
                 <div>
-                  <span class="font-semibold text-slate-200">Address:</span>
-                  <p class="text-slate-400 text-xs sm:text-sm mt-0.5">Sarghoda-Mianwali Rd, Wan Bhachran, 42100, Punjab, Pakistan</p>
+                  <span class="text-white font-bold block">STORE COUNTER & WAREHOUSE</span>
+                  <span class="text-slate-400 text-[11px]">Sargodha-Mianwali Rd, Wan Bhachran</span>
                 </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
-                  <i class="fa-regular fa-clock"></i>
-                </div>
-                <div>
-                  <span class="font-semibold text-slate-200">Shop Timings:</span>
-                  <p class="text-slate-400 text-xs sm:text-sm mt-0.5">Monday – Sunday: 08:00 AM – 09:00 PM</p>
-                  <p class="text-slate-500 text-xs italic">Friday: Break during Juma prayer</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <span class="font-semibold text-slate-200">Instant Customer Support:</span>
-                  <p class="text-slate-400 text-xs sm:text-sm mt-0.5">Direct phone call & WhatsApp order line available.</p>
-                </div>
+                <span class="px-2 py-0.5 bg-emerald-950 text-emerald-400 text-[10px] font-mono border border-emerald-700 uppercase">
+                  Active Stock
+                </span>
               </div>
             </div>
 
-            <a href="#location" class="block w-full py-3 text-center bg-slate-700/60 hover:bg-slate-700 text-slate-200 hover:text-white rounded-xl text-xs sm:text-sm font-semibold transition-colors border border-slate-600/50">
-              <i class="fa-solid fa-arrow-down mr-1.5"></i> View Map & Direction Details
-            </a>
+            <!-- Secondary Storefront Snapshot -->
+            <div class="grid grid-cols-2 gap-2 mt-2">
+              <div class="relative aspect-[3/2] overflow-hidden bg-black rounded-sm border border-industrial-800">
+                <img src="images/unnamed.jpg" alt="Shopfront Signboard" class="w-full h-full object-cover">
+                <span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-black/80 text-[10px] font-mono text-slate-300">Exterior Facade</span>
+              </div>
+              <div class="relative aspect-[3/2] overflow-hidden bg-black rounded-sm border border-industrial-800">
+                <img src="images/unnamed1.jpg" alt="Cable and Distribution Stock" class="w-full h-full object-cover">
+                <span class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-black/80 text-[10px] font-mono text-slate-300">Wiring Stock</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -227,258 +218,252 @@
     </div>
   </section>
 
-  <!-- Categories Highlight Section -->
-  <section id="categories" class="py-14 bg-white border-b border-slate-200">
+  <!-- Physical Store Facility & Genuine Stock Section -->
+  <section id="facility-proof" class="py-12 bg-white border-b border-slate-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Everything for Your Electrical Needs</h2>
-        <p class="text-slate-600 text-sm mt-2">Supplying residential houses, commercial buildings, farms, and local electricians.</p>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-200">
+        <div>
+          <span class="font-mono text-xs uppercase font-bold text-amberSteel tracking-widest">PHYSICAL VERIFIED LOCATION</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-industrial-950 mt-1">Our Store & On-Shelf Inventory</h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-2xl">
+            Real inventory stocked on our shop counter on Sargodha-Mianwali Road, Wan Bhachran. Visit us for immediate inspection, testing, and collection.
+          </p>
+        </div>
+        <div class="text-left md:text-right shrink-0 font-mono text-xs">
+          <span class="text-slate-500 block">SHOP ADDRESS CODE:</span>
+          <strong class="text-industrial-950 text-sm">WAN BHACHRAN 42100</strong>
+        </div>
       </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-        <!-- Cat 1 -->
-        <button onclick="filterCategory('wiring')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-bolt"></i>
+      <!-- Real Photography Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        
+        <!-- Photo 1: Storefront -->
+        <div class="border border-slate-300 bg-slate-50 overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="images/unnamed.jpg" alt="Official Shopfront Signboard" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-2 left-2 px-2 py-0.5 bg-industrial-950 text-white font-mono text-[10px] uppercase font-bold border border-industrial-700">Main Signboard</span>
           </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Cables & Wire</span>
-          <span class="text-[11px] text-slate-500">3/29, 7/29 Copper</span>
-        </button>
+          <div class="p-3.5 border-t border-slate-200">
+            <h4 class="font-mono text-xs font-bold uppercase text-industrial-950">Storefront & Main Road Entry</h4>
+            <p class="text-slate-500 text-[11px] mt-1">Located directly on Sargodha-Mianwali main highway with easy vehicle loading access.</p>
+          </div>
+        </div>
 
-        <!-- Cat 2 -->
-        <button onclick="filterCategory('fans')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-fan"></i>
+        <!-- Photo 2: Counter & Warehouse -->
+        <div class="border border-slate-300 bg-slate-50 overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="images/unnamed2.jpg" alt="Sales Counter and Appliance Shelves" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-2 left-2 px-2 py-0.5 bg-industrial-950 text-white font-mono text-[10px] uppercase font-bold border border-industrial-700">Sales Counter</span>
           </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Fans & Cooling</span>
-          <span class="text-[11px] text-slate-500">BLDC & Exhaust</span>
-        </button>
+          <div class="p-3.5 border-t border-slate-200">
+            <h4 class="font-mono text-xs font-bold uppercase text-industrial-950">Retail & Wholesale Desk</h4>
+            <p class="text-slate-500 text-[11px] mt-1">Fans, packaged electrical units, and customer billing counter.</p>
+          </div>
+        </div>
 
-        <!-- Cat 3 -->
-        <button onclick="filterCategory('solar')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-solar-panel"></i>
+        <!-- Photo 3: Cable & Conductor Stock -->
+        <div class="border border-slate-300 bg-slate-50 overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="images/unnamed1.jpg" alt="Cable Coils and Distribution Inventory" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-2 left-2 px-2 py-0.5 bg-industrial-950 text-white font-mono text-[10px] uppercase font-bold border border-industrial-700">Wiring Stock</span>
           </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Solar & UPS</span>
-          <span class="text-[11px] text-slate-500">Inverters & Batteries</span>
-        </button>
+          <div class="p-3.5 border-t border-slate-200">
+            <h4 class="font-mono text-xs font-bold uppercase text-industrial-950">Copper Cable Racks</h4>
+            <p class="text-slate-500 text-[11px] mt-1">Factory sealed 90-meter coils of 3/29, 7/29, and sub-distribution lines.</p>
+          </div>
+        </div>
 
-        <!-- Cat 4 -->
-        <button onclick="filterCategory('breakers')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-shield-halved"></i>
+        <!-- Photo 4: Switchboards & Fixtures -->
+        <div class="border border-slate-300 bg-slate-50 overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="images/unnamed3.jpg" alt="Switchgear and Lighting Shelves" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-2 left-2 px-2 py-0.5 bg-industrial-950 text-white font-mono text-[10px] uppercase font-bold border border-industrial-700">Switchgear Racks</span>
           </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Breakers & DB</span>
-          <span class="text-[11px] text-slate-500">MCB & Changeovers</span>
-        </button>
+          <div class="p-3.5 border-t border-slate-200">
+            <h4 class="font-mono text-xs font-bold uppercase text-industrial-950">Modular Plates & Accessories</h4>
+            <p class="text-slate-500 text-[11px] mt-1">Complete range of gang plates, circuit breakers, DB boxes, and LED lamps.</p>
+          </div>
+        </div>
 
-        <!-- Cat 5 -->
-        <button onclick="filterCategory('lighting')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-lightbulb"></i>
-          </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Lighting & LED</span>
-          <span class="text-[11px] text-slate-500">SMD & Floodlights</span>
-        </button>
-
-        <!-- Cat 6 -->
-        <button onclick="filterCategory('appliances')" class="p-4 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition-all text-center group cursor-pointer">
-          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-plug"></i>
-          </div>
-          <span class="block font-bold text-sm text-slate-900 group-hover:text-blue-600">Appliances</span>
-          <span class="text-[11px] text-slate-500">Pumps, Irons, etc.</span>
-        </button>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Product Catalog -->
-  <section id="catalog" class="py-16 bg-slate-50">
+  <!-- Technical Product Catalog Section -->
+  <section id="store-inventory" class="py-14 bg-slate-100 border-b border-slate-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <!-- Catalog Header & Search Filter Controls -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-300">
         <div>
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Shop Inventory & Catalog</span>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">Available Products</h2>
-          <p class="text-slate-600 text-sm mt-1">Search our catalog or filter by category. Tap to inquire via WhatsApp.</p>
+          <span class="font-mono text-xs uppercase font-bold text-industrial-700 tracking-widest">TECHNICAL SPECIFICATION CATALOG</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-industrial-950 mt-1">Commercial Inventory & Engineering Specs</h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">Select category or filter by technical keyword. Real photo and full technical ratings provided for each SKU.</p>
         </div>
 
-        <!-- Search Bar -->
-        <div class="relative w-full md:w-80">
-          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+        <!-- Search Input -->
+        <div class="w-full md:w-80">
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 font-mono text-xs">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input 
+              type="text" 
+              id="searchInput" 
+              placeholder="Filter by SKU, wire, fan, breaker..." 
+              class="w-full pl-9 pr-3 py-2.5 bg-white border border-slate-300 rounded-sm font-mono text-xs text-slate-900 focus:outline-none focus:border-industrial-900 focus:ring-1 focus:ring-industrial-900 shadow-sm"
+              oninput="handleSearch()"
+            >
           </div>
-          <input 
-            type="text" 
-            id="searchInput" 
-            placeholder="Search fans, wire, breakers..." 
-            class="w-full pl-10 pr-4 py-3 bg-white rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm shadow-sm transition-all"
-            oninput="handleSearch()"
-          >
         </div>
       </div>
 
-      <!-- Filter Pills -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-4 no-scrollbar mb-8 text-xs font-semibold">
-        <button onclick="filterCategory('all')" id="filter-all" class="filter-pill active px-4 py-2 rounded-full bg-slate-900 text-white whitespace-nowrap shadow-sm transition-all">All Products (<span id="count-all">0</span>)</button>
-        <button onclick="filterCategory('wiring')" id="filter-wiring" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Cables & Wiring</button>
-        <button onclick="filterCategory('fans')" id="filter-fans" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Fans & Cooling</button>
-        <button onclick="filterCategory('solar')" id="filter-solar" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Solar & UPS</button>
-        <button onclick="filterCategory('breakers')" id="filter-breakers" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Breakers & DBs</button>
-        <button onclick="filterCategory('lighting')" id="filter-lighting" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Lighting & LED</button>
-        <button onclick="filterCategory('switches')" id="filter-switches" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Switches & Sockets</button>
-        <button onclick="filterCategory('appliances')" id="filter-appliances" class="filter-pill px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap transition-all">Appliances</button>
+      <!-- Category Filter Tabs (Sharp Industrial Toolbar) -->
+      <div class="flex items-center gap-1.5 overflow-x-auto py-4 border-b border-slate-300 font-mono text-xs font-bold uppercase">
+        <button onclick="filterCategory('all')" id="filter-all" class="filter-tab active px-3.5 py-2 bg-industrial-950 text-white border border-industrial-950 whitespace-nowrap">All Items (<span id="count-all">0</span>)</button>
+        <button onclick="filterCategory('wiring')" id="filter-wiring" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Cables & Wiring</button>
+        <button onclick="filterCategory('breakers')" id="filter-breakers" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Switchgear & Breakers</button>
+        <button onclick="filterCategory('fans')" id="filter-fans" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Fans & Cooling</button>
+        <button onclick="filterCategory('solar')" id="filter-solar" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Solar & Inverters</button>
+        <button onclick="filterCategory('lighting')" id="filter-lighting" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Lighting & LED</button>
+        <button onclick="filterCategory('switches')" id="filter-switches" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Plates & Sockets</button>
+        <button onclick="filterCategory('appliances')" id="filter-appliances" class="filter-tab px-3.5 py-2 bg-white text-slate-700 border border-slate-300 hover:border-slate-400 whitespace-nowrap">Appliances & Pumps</button>
       </div>
 
-      <!-- Products Grid -->
-      <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <!-- Rendered dynamically by JavaScript -->
+      <!-- High-Density Technical Product Grid -->
+      <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <!-- Injected via JavaScript from products.js -->
       </div>
 
       <!-- Empty State -->
-      <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-slate-200 p-8">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center text-2xl">
-          <i class="fa-solid fa-box-open"></i>
-        </div>
-        <h3 class="text-base font-bold text-slate-900">No matching products found</h3>
-        <p class="text-xs text-slate-500 mt-1 max-w-sm mx-auto">Try searching for something else or contact us on WhatsApp directly with what you are looking for.</p>
-        <button onclick="resetFilters()" class="mt-4 px-4 py-2 text-xs font-semibold rounded-lg bg-brand-600 text-white hover:bg-brand-700">Show All Products</button>
-      </div>
-
-      <!-- Custom Order Notice Card -->
-      <div class="mt-12 bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-        <div class="space-y-1.5 text-center md:text-left">
-          <span class="inline-block px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wide">Looking for something specific?</span>
-          <h3 class="text-xl sm:text-2xl font-bold">Have a building project or wholesale inquiry?</h3>
-          <p class="text-sm text-slate-300 max-w-xl">Send us your electrical map, list of switches, wire gauge, or load requirements. We prepare custom wholesale quotation estimates promptly.</p>
-        </div>
-        <a id="customEstimateWhatsappBtn" href="#" target="_blank" class="shrink-0 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all flex items-center gap-2">
-          <i class="fa-brands fa-whatsapp text-lg"></i> Send Estimate Request
-        </a>
+      <div id="emptyState" class="hidden text-center py-16 bg-white border border-slate-300 p-8 my-8">
+        <i class="fa-solid fa-boxes-stacked text-3xl text-slate-400 mb-3"></i>
+        <h3 class="font-mono text-sm font-bold uppercase text-slate-900">No Matching Inventory Items Found</h3>
+        <p class="text-xs text-slate-500 mt-1 max-w-md mx-auto">Please check your spelling or contact our trade desk directly on WhatsApp for manual item lookups.</p>
+        <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-industrial-900 text-white font-mono text-xs uppercase font-bold">Clear Filters</button>
       </div>
 
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="why-us" class="py-16 bg-white border-t border-slate-200">
+  <!-- Contractor & Commercial RFQ Section -->
+  <section id="contractors" class="py-14 bg-industrial-900 text-white border-b border-industrial-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">The Sarghoda Electric Difference</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-1">Why Customers in Wan Bhachran Choose Us</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-slate-200 transition-all">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-gem"></i>
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-industrial-800 text-amber-400 font-mono text-xs uppercase tracking-wider border border-industrial-700">
+            <i class="fa-solid fa-clipboard-list text-xs"></i>
+            COMMERCIAL SUPPLY & CONTRACTOR ACCOUNTS
           </div>
-          <h3 class="font-bold text-base text-slate-900 mb-2">100% Guaranteed Originality</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            We never sell substandard or mixed copper wiring. All cables, switches, and circuit breakers come directly from verified manufacturers with full warranty support.
+          <h2 class="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">
+            Have a Building Bill of Quantities (BOQ)?
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed max-w-2xl">
+            We supply complete electrical packages for residential houses, commercial plazas, mosques, tube-wells, and industrial workshops across Wan Bhachran and surrounding towns. Send your electrical map or itemized requirements list to our WhatsApp desk for wholesale estimation.
           </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 font-mono text-xs text-slate-300">
+            <div class="bg-industrial-950 p-3 border border-industrial-800">
+              <strong class="text-white block mb-0.5">WHOLESALE ROLLS</strong>
+              <span class="text-slate-400 text-[11px]">Factory carton rates for cable coils & breakers</span>
+            </div>
+            <div class="bg-industrial-950 p-3 border border-industrial-800">
+              <strong class="text-white block mb-0.5">PROJECT STAGING</strong>
+              <span class="text-slate-400 text-[11px]">Phased material dispatch per construction stage</span>
+            </div>
+            <div class="bg-industrial-950 p-3 border border-industrial-800">
+              <strong class="text-white block mb-0.5">COUNTER PICKUP</strong>
+              <span class="text-slate-400 text-[11px]">Same-day loading at our main highway facility</span>
+            </div>
+          </div>
         </div>
 
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-slate-200 transition-all">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-tags"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 mb-2">Honest, Competitive Pricing</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Whether you need a single LED bulb for your home or complete wiring rolls for an entire multi-story plaza, you get the fairest market rates in the district.
+        <div class="lg:col-span-4 bg-industrial-950 p-6 border border-industrial-700 text-center space-y-4">
+          <div class="font-mono text-xs uppercase text-slate-400">Direct Trade Hotline</div>
+          <div class="text-2xl font-bold font-mono text-amber-400">0301 6353217</div>
+          <p class="text-xs text-slate-400 leading-normal">
+            Take a photo of your electrical slip, estimate list, or requirement paper and WhatsApp it directly:
           </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-slate-200 transition-all">
-          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 mb-2">Technical Guidance & Sizing</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Not sure what gauge wire you need for an AC, or what capacity breaker fits your load? We give practical technical advice before you buy.
-          </p>
+          <a id="contractorWhatsappBtn" href="https://wa.me/923016353217?text=Assalam-o-Alaikum%2C%20I%20have%20an%20electrical%20material%20estimate%20list%20for%20a%20project." target="_blank" class="block w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-mono text-xs uppercase font-bold tracking-wider transition-colors">
+            <i class="fa-brands fa-whatsapp text-sm mr-1"></i> Send BOQ List on WhatsApp
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Location & Contact Section -->
-  <section id="location" class="py-16 bg-slate-900 text-white relative">
+  <!-- Location, Map & Dispatch Terminal -->
+  <section id="location-dispatch" class="py-14 bg-white border-b border-slate-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Left: Details -->
-        <div class="lg:col-span-6 space-y-6">
+        <!-- Left: Verified Business Coordinates -->
+        <div class="lg:col-span-5 space-y-5">
           <div>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Store Location & Contact</span>
-            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-1">Visit Sarghoda Electric</h2>
-            <p class="text-slate-300 text-sm mt-2">Located along the main Sargodha-Mianwali Road corridor in Wan Bhachran.</p>
+            <span class="font-mono text-xs uppercase font-bold text-amberSteel tracking-widest">FACILITY VERIFICATION</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-industrial-950 mt-1">Shop Address & Dispatch Terminal</h2>
           </div>
 
-          <div class="space-y-4 text-sm">
+          <div class="space-y-3 font-mono text-xs">
             
-            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700 flex items-start gap-3">
-              <i class="fa-solid fa-location-dot text-amber-400 text-lg mt-0.5"></i>
-              <div>
-                <strong class="block text-white">Full Postal Address:</strong>
-                <span class="text-slate-300">Sarghoda-Mianwali Rd, Wan Bhachran, 42100, Punjab, Pakistan</span>
-              </div>
+            <div class="p-3.5 bg-slate-50 border border-slate-300">
+              <span class="text-slate-500 uppercase block text-[10px]">Business Name</span>
+              <strong class="text-industrial-950 text-sm">Sarghoda Electric and Electronics</strong>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700 flex items-start gap-3">
-              <i class="fa-regular fa-clock text-blue-400 text-lg mt-0.5"></i>
-              <div>
-                <strong class="block text-white">Business Hours:</strong>
-                <span class="text-slate-300">Open 7 Days a week: 08:00 AM – 09:00 PM</span>
-              </div>
+            <div class="p-3.5 bg-slate-50 border border-slate-300">
+              <span class="text-slate-500 uppercase block text-[10px]">Physical Highway Location</span>
+              <p class="text-slate-800 text-xs mt-0.5 font-sans font-medium">
+                Sargodha - Mianwali Rd, Wan Bhachran, 42100, Punjab, Pakistan
+              </p>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700 flex items-start gap-3">
-              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg mt-0.5"></i>
-              <div>
-                <strong class="block text-white">WhatsApp & Phone:</strong>
-                <span id="contactPhoneDisplay" class="text-slate-300">Available during shop hours for orders & price checks.</span>
-              </div>
+            <div class="p-3.5 bg-slate-50 border border-slate-300">
+              <span class="text-slate-500 uppercase block text-[10px]">Operational Hours</span>
+              <p class="text-slate-800 text-xs mt-0.5">
+                MONDAY – SUNDAY: 08:00 AM – 09:00 PM (21:00)
+              </p>
+              <span class="text-slate-500 text-[10px] block mt-1">Friday break during Juma Prayer.</span>
+            </div>
+
+            <div class="p-3.5 bg-slate-50 border border-slate-300">
+              <span class="text-slate-500 uppercase block text-[10px]">Telephone Line & WhatsApp</span>
+              <p class="text-industrial-950 font-bold text-sm mt-0.5">
+                0301 6353217
+              </p>
             </div>
 
           </div>
 
-          <div class="pt-2 flex flex-wrap gap-4">
+          <div class="pt-2 flex flex-wrap gap-3">
             <a 
               href="https://www.google.com/maps/search/?api=1&query=Sarghoda+Electric+and+Electronics+Wan+Bhachran" 
               target="_blank" 
-              class="px-5 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-900 font-bold text-sm flex items-center gap-2 transition-colors"
+              class="px-5 py-3 bg-industrial-950 hover:bg-industrial-800 text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-colors"
             >
-              <i class="fa-solid fa-diamond-turn-right text-brand-600"></i> Open in Google Maps
+              <i class="fa-solid fa-location-arrow text-amber-400"></i> Open Live Google Maps Route
             </a>
             <a 
               id="locationWhatsappBtn" 
-              href="#" 
+              href="https://wa.me/923016353217" 
               target="_blank" 
-              class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center gap-2 transition-colors"
+              class="px-5 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-colors"
             >
               <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
             </a>
           </div>
-
         </div>
 
-        <!-- Right: Map Card & Directions Guide -->
-        <div class="lg:col-span-6">
-          <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 overflow-hidden shadow-2xl">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="font-bold text-white text-base">Google Maps Route</h3>
-              <span class="text-xs text-slate-400">Wan Bhachran, 42100</span>
-            </div>
-
-            <!-- Interactive Map Embed Frame -->
-            <div class="w-full h-72 rounded-xl overflow-hidden bg-slate-900 border border-slate-700 relative">
+        <!-- Right: Real Google Maps Frame -->
+        <div class="lg:col-span-7">
+          <div class="border border-slate-300 bg-slate-900 p-2 shadow-md">
+            <div class="w-full h-80 sm:h-96 bg-slate-950 relative overflow-hidden">
               <iframe 
-                title="Sarghoda Electric and Electronics Location"
+                title="Sarghoda Electric and Electronics Location Map"
                 width="100%" 
                 height="100%" 
                 style="border:0;" 
@@ -488,15 +473,17 @@
                 src="https://maps.google.com/maps?q=Wan+Bhachran+Punjab+Pakistan&t=&z=14&ie=UTF8&iwloc=&output=embed">
               </iframe>
             </div>
-
-            <div class="mt-4 p-3.5 rounded-lg bg-slate-900/60 border border-slate-700/60 text-xs text-slate-400 flex items-center justify-between">
-              <span>Directions: Conveniently accessible from Sargodha-Mianwali main road.</span>
+            <div class="p-3 bg-industrial-950 text-slate-300 font-mono text-xs flex items-center justify-between border-t border-industrial-800">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-diamond-turn-right text-amber-400"></i>
+                <span class="text-[11px]">GPS Coordinates: Sargodha-Mianwali Road corridor</span>
+              </span>
               <a 
                 href="https://www.google.com/maps/search/?api=1&query=Sarghoda+Electric+and+Electronics+Wan+Bhachran" 
                 target="_blank"
-                class="text-amber-400 hover:underline font-semibold shrink-0 ml-2"
+                class="text-amber-400 hover:underline uppercase font-bold text-[11px]"
               >
-                Get Directions <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                Directions Link &rarr;
               </a>
             </div>
           </div>
@@ -507,52 +494,50 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+  <!-- Technical Industrial Footer -->
+  <footer class="bg-industrial-950 text-slate-400 py-10 border-t border-industrial-800 font-mono text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
       <div>
-        <p class="font-semibold text-slate-300">Sarghoda Electric and Electronics</p>
-        <p class="text-slate-500 mt-0.5">Sarghoda-Mianwali Rd, Wan Bhachran, 42100 · Verified Google Business</p>
+        <p class="font-bold text-white uppercase text-sm">Sarghoda Electric and Electronics</p>
+        <p class="text-slate-500 mt-0.5">Sargodha-Mianwali Rd, Wan Bhachran, 42100 · Verified Google Business</p>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="#catalog" class="hover:text-white transition-colors">Catalog</a>
-        <a href="#location" class="hover:text-white transition-colors">Location</a>
-        <a id="footerWhatsapp" href="#" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold">WhatsApp</a>
+      <div class="flex items-center gap-6 text-slate-300">
+        <a href="#store-inventory" class="hover:text-white transition-colors">Catalog</a>
+        <a href="#facility-proof" class="hover:text-white transition-colors">Stock Facility</a>
+        <a href="#location-dispatch" class="hover:text-white transition-colors">Location</a>
+        <a id="footerWhatsapp" href="https://wa.me/923016353217" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold">WhatsApp Direct</a>
       </div>
       <p class="text-slate-600">
-        &copy; <span id="currentYear"></span> All rights reserved.
+        &copy; <span id="currentYear"></span> Commercial Trade Portal.
       </p>
     </div>
   </footer>
 
-  <!-- Mobile Bottom Sticky Action Bar (For instant calls and WhatsApp on phones) -->
-  <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200 z-50 md:hidden px-4 py-2 flex items-center justify-around text-center shadow-lg">
-    <a id="bottomCallBtn" href="tel:+923016353217" class="flex flex-col items-center text-slate-700 hover:text-brand-600">
-      <i class="fa-solid fa-phone text-base text-blue-600"></i>
-      <span class="text-[10px] font-bold mt-1">Call</span>
+  <!-- Clean Industrial Mobile Fixed Action Bar -->
+  <div class="fixed bottom-0 inset-x-0 bg-industrial-950 border-t border-industrial-800 z-50 md:hidden px-3 py-2 flex items-center justify-around font-mono text-xs shadow-2xl">
+    <a id="bottomCallBtn" href="tel:+923016353217" class="flex flex-col items-center text-slate-300 hover:text-amber-400">
+      <i class="fa-solid fa-phone text-sm text-amber-400"></i>
+      <span class="text-[10px] mt-0.5">CALL</span>
     </a>
-    <a id="bottomWhatsappBtn" href="#" target="_blank" class="flex flex-col items-center text-slate-700 hover:text-emerald-600">
-      <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i>
-      <span class="text-[10px] font-bold mt-1">WhatsApp</span>
+    <a id="bottomWhatsappBtn" href="https://wa.me/923016353217" target="_blank" class="flex flex-col items-center text-emerald-400 hover:text-emerald-300">
+      <i class="fa-brands fa-whatsapp text-base"></i>
+      <span class="text-[10px] mt-0.5">WHATSAPP</span>
     </a>
-    <a href="#catalog" class="flex flex-col items-center text-slate-700 hover:text-brand-600">
-      <i class="fa-solid fa-layer-group text-base text-amber-500"></i>
-      <span class="text-[10px] font-bold mt-1">Catalog</span>
+    <a href="#store-inventory" class="flex flex-col items-center text-slate-300 hover:text-white">
+      <i class="fa-solid fa-table-list text-sm"></i>
+      <span class="text-[10px] mt-0.5">CATALOG</span>
     </a>
-    <a href="https://www.google.com/maps/search/?api=1&query=Sarghoda+Electric+and+Electronics+Wan+Bhachran" target="_blank" class="flex flex-col items-center text-slate-700 hover:text-brand-600">
-      <i class="fa-solid fa-location-dot text-base text-rose-500"></i>
-      <span class="text-[10px] font-bold mt-1">Map</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Sarghoda+Electric+and+Electronics+Wan+Bhachran" target="_blank" class="flex flex-col items-center text-slate-300 hover:text-white">
+      <i class="fa-solid fa-location-dot text-sm text-red-400"></i>
+      <span class="text-[10px] mt-0.5">DIRECTIONS</span>
     </a>
   </div>
 
   <!-- Load Products Dataset -->
   <script src="products.js"></script>
 
-  <!-- Site Script & Dynamic Logic -->
+  <!-- Technical Product Render Engine -->
   <script>
-    // ==========================================
-    // ⚙️ SHOP CONFIGURATION
-    // ==========================================
     const SHOP_CONFIG = {
       name: "Sarghoda Electric and Electronics",
       address: "Sargodha-Mianwali Rd, Wan Bhachran, 42100",
@@ -563,14 +548,13 @@
     let activeFilter = 'all';
     let searchQuery = '';
 
-    // Initialize links with config
     function initContactLinks() {
-      const waUrl = `https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum, I am inquiring about products at Sarghoda Electric and Electronics.")}`;
+      const waUrl = `https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum, I am inquiring about electrical products at Sarghoda Electric and Electronics.")}`;
       const telUrl = `tel:${SHOP_CONFIG.phoneNumber.replace(/\\s+/g, '')}`;
 
       const waElements = [
         'navWhatsappBtn', 'mobileHeaderWhatsapp', 'heroWhatsappBtn', 
-        'customEstimateWhatsappBtn', 'locationWhatsappBtn', 
+        'contractorWhatsappBtn', 'locationWhatsappBtn', 
         'footerWhatsapp', 'bottomWhatsappBtn'
       ];
       waElements.forEach(id => {
@@ -584,15 +568,9 @@
         if (el) el.href = telUrl;
       });
 
-      const topPhoneText = document.getElementById('topPhoneText');
-      if (topPhoneText && SHOP_CONFIG.phoneNumber !== "+92 300 0000000") {
-        topPhoneText.textContent = SHOP_CONFIG.phoneNumber;
-      }
-
       document.getElementById('currentYear').textContent = new Date().getFullYear();
     }
 
-    // Render Product Cards
     function renderProducts() {
       const grid = document.getElementById('productsGrid');
       const emptyState = document.getElementById('emptyState');
@@ -601,13 +579,13 @@
         const matchesCat = (activeFilter === 'all') || (item.category === activeFilter);
         const matchesSearch = searchQuery === '' || 
           item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.categoryName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.sku.toLowerCase().includes(searchQuery.toLowerCase()) ||
           item.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.description.toLowerCase().includes(searchQuery.toLowerCase());
+          item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          JSON.stringify(item.specs).toLowerCase().includes(searchQuery.toLowerCase());
         return matchesCat && matchesSearch;
       });
 
-      // Update count badge
       document.getElementById('count-all').textContent = catalogProducts.length;
 
       if (filtered.length === 0) {
@@ -618,67 +596,81 @@
 
       emptyState.classList.add('hidden');
       grid.innerHTML = filtered.map(product => {
-        const productWaText = `Assalam-o-Alaikum, I want to inquire about the price and availability of: *${product.title}* (${product.brand}) at Sarghoda Electric and Electronics.`;
+        const productWaText = `Assalam-o-Alaikum, I am requesting quotation and stock check for:
+SKU: ${product.sku}
+Item: ${product.title}
+Brand: ${product.brand}
+Shop: Sarghoda Electric and Electronics, Wan Bhachran.`;
         const productWaLink = `https://wa.me/${SHOP_CONFIG.whatsappNumber}?text=${encodeURIComponent(productWaText)}`;
 
+        // Render technical specs as a clean key-value table
+        const specRows = Object.entries(product.specs || {}).map(([key, val]) => `
+          <div class="flex items-center justify-between py-1 border-b border-slate-200 text-[11px] font-mono">
+            <span class="text-slate-500">${key}:</span>
+            <span class="font-bold text-slate-800 text-right">${val}</span>
+          </div>
+        `).join('');
+
         return `
-          <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all flex flex-col justify-between group">
+          <div class="bg-white border border-slate-300 hover:border-industrial-900 transition-colors flex flex-col justify-between shadow-sm">
             
-            <!-- Card Header & Icon Graphic -->
-            <div class="p-5 pb-0">
-              <div class="flex items-center justify-between gap-2 mb-3">
-                <span class="text-[11px] font-bold px-2.5 py-1 rounded-md bg-blue-50 text-brand-700">
-                  ${product.categoryName}
-                </span>
-                ${product.badge ? `
-                  <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">
-                    ${product.badge}
-                  </span>
-                ` : ''}
+            <!-- Real Product Photography Header -->
+            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-slate-300">
+              <img 
+                src="${product.image}" 
+                alt="${product.title}" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='images/unnamed2.jpg'"
+              >
+              <!-- Technical SKU Badge -->
+              <div class="absolute top-2 left-2 px-2 py-0.5 bg-industrial-950/90 text-amber-400 font-mono text-[10px] font-bold border border-industrial-700 uppercase">
+                ${product.sku}
               </div>
-
-              <!-- Product Graphic / Icon Placeholder -->
-              <div class="w-full h-36 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-blue-50/50 group-hover:text-brand-600 transition-colors">
-                <div class="text-center">
-                  <i class="fa-solid ${product.icon || 'fa-box'} text-4xl mb-1"></i>
-                  <span class="block text-[11px] font-semibold text-slate-500">${product.brand}</span>
-                </div>
+              <div class="absolute top-2 right-2 px-2 py-0.5 bg-white/95 text-industrial-950 font-mono text-[10px] font-bold border border-slate-300 uppercase">
+                ${product.categoryName}
               </div>
-
-              <!-- Title & Info -->
-              <div class="mt-4">
-                <h3 class="font-bold text-base text-slate-900 group-hover:text-brand-600 transition-colors leading-snug">
-                  ${product.title}
-                </h3>
-                <p class="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                  ${product.description}
-                </p>
-              </div>
-
-              <!-- Specs Bullets -->
-              <ul class="mt-3.5 space-y-1.5 pt-3 border-t border-slate-100">
-                ${product.specs.map(spec => `
-                  <li class="flex items-center gap-2 text-xs text-slate-600">
-                    <i class="fa-solid fa-circle-check text-emerald-500 text-[11px]"></i>
-                    <span>${spec}</span>
-                  </li>
-                `).join('')}
-              </ul>
             </div>
 
-            <!-- Card Action Footer -->
-            <div class="p-5 pt-4 mt-4 bg-slate-50/60 border-t border-slate-100 flex items-center justify-between gap-3">
+            <!-- Card Body -->
+            <div class="p-4 flex-1">
+              
+              <div class="mb-2">
+                <span class="text-[11px] font-mono text-slate-500 uppercase font-semibold">${product.brand}</span>
+                <h3 class="font-bold text-sm sm:text-base text-industrial-950 mt-0.5 leading-snug">
+                  ${product.title}
+                </h3>
+              </div>
+
+              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">
+                ${product.description}
+              </p>
+
+              <!-- Technical Specification Table -->
+              <div class="bg-slate-50 p-2.5 border border-slate-200 space-y-0.5">
+                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold tracking-wider mb-1">
+                  Technical Specifications
+                </div>
+                ${specRows}
+              </div>
+
+            </div>
+
+            <!-- Trade Action Footer -->
+            <div class="p-3 bg-slate-100 border-t border-slate-300 flex items-center justify-between gap-3 font-mono">
               <div>
-                <span class="block text-[10px] uppercase font-bold text-slate-400">Status / Rate</span>
-                <span class="text-xs font-bold text-slate-800">${product.priceText || 'Contact'}</span>
+                <span class="block text-[10px] text-slate-500 uppercase">Status</span>
+                <span class="text-[11px] font-bold text-emerald-800 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> ${product.availability}
+                </span>
               </div>
 
               <a 
                 href="${productWaLink}" 
                 target="_blank" 
-                class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all hover:scale-105"
+                class="px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-mono font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm transition-colors"
               >
-                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire
+                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire Quote
               </a>
             </div>
 
@@ -687,40 +679,35 @@
       }).join('');
     }
 
-    // Filter by Category
     function filterCategory(category) {
       activeFilter = category;
       
-      // Update pill classes
-      document.querySelectorAll('.filter-pill').forEach(btn => {
-        btn.classList.remove('bg-slate-900', 'text-white');
-        btn.classList.add('bg-white', 'text-slate-700');
+      document.querySelectorAll('.filter-tab').forEach(btn => {
+        btn.classList.remove('bg-industrial-950', 'text-white', 'border-industrial-950');
+        btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300');
       });
 
       const activeBtn = document.getElementById(`filter-${category}`);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-white', 'text-slate-700');
-        activeBtn.classList.add('bg-slate-900', 'text-white');
+        activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300');
+        activeBtn.classList.add('bg-industrial-950', 'text-white', 'border-industrial-950');
       }
 
       renderProducts();
     }
 
-    // Handle Search
     function handleSearch() {
       const input = document.getElementById('searchInput');
       searchQuery = input.value.trim();
       renderProducts();
     }
 
-    // Reset Filters
     function resetFilters() {
       document.getElementById('searchInput').value = '';
       searchQuery = '';
       filterCategory('all');
     }
 
-    // On Load
     document.addEventListener('DOMContentLoaded', () => {
       initContactLinks();
       renderProducts();
