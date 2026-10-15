@@ -9,7 +9,7 @@ const catalogProducts = [
     category: "wiring",
     categoryName: "Cables & Conductor",
     brand: "Pakistan Cables / Standard Grade",
-    image: "images/unnamed12.jpg",
+    image: "images/unnamed16.jpg",
     description: "High-conductivity annealed pure electrolytic copper (99.9% purity) with flame-retardant PVC insulation. Engineered for primary residential and commercial circuit wiring.",
     specs: {
       "Conductor": "99.9% Electrolytic Copper",
@@ -28,7 +28,7 @@ const catalogProducts = [
     category: "wiring",
     categoryName: "Cables & Conductor",
     brand: "Certified Standard Wire",
-    image: "images/unnamed1.jpg",
+    image: "images/unnamed16.jpg",
     description: "Multi-strand pure copper conductor insulated with high-grade PVC. Ideal for lighting sub-circuits, ceiling fans, and low-load branch distribution.",
     specs: {
       "Conductor": "Annealed Bare Copper",
@@ -47,7 +47,7 @@ const catalogProducts = [
     category: "breakers",
     categoryName: "Distribution & Switchgear",
     brand: "Schneider / Terasaki Standard",
-    image: "images/unnamed13.jpg",
+    image: "images/unnamed17.jpg",
     description: "Calibrated thermal-magnetic trip mechanism for short-circuit and overcurrent protection. Standard DIN-rail mount design for distribution boards.",
     specs: {
       "Current Rating": "63 Amperes",
@@ -66,7 +66,7 @@ const catalogProducts = [
     category: "breakers",
     categoryName: "Distribution & Switchgear",
     brand: "Industrial Switchgear Corp",
-    image: "images/unnamed16.jpg",
+    image: "images/unnamed17.jpg",
     description: "Rugged transfer switch with heavy phosphor bronze contact terminals. Safe dual-source switching between WAPDA grid and Solar/Generator backup.",
     specs: {
       "Current Capacity": "63 Amp Continuous",
@@ -85,7 +85,7 @@ const catalogProducts = [
     category: "fans",
     categoryName: "Fans & Air Movement",
     brand: "Pak Fan / Royal / Prince Series",
-    image: "images/unnamed14.jpg",
+    image: "images/unnamed1.jpg",
     description: "Brushless DC motor delivering high CFM air delivery at 30W-35W total consumption. Operates smoothly on low voltage (140V) and direct solar systems.",
     specs: {
       "Sweep Diameter": "1400mm (56 Inch)",
@@ -123,7 +123,7 @@ const catalogProducts = [
     category: "solar",
     categoryName: "Solar & Power Systems",
     brand: "Inverex / Crown Engineering Class",
-    image: "images/unnamed11.jpg",
+    image: "images/unnamed12.jpg",
     description: "Pure sine wave solar inverter integrated with high-voltage MPPT solar charge controller. Supports battery-less operation, solar priority, and grid-sharing.",
     specs: {
       "Rated Power": "3200VA / 4200VA",
@@ -142,7 +142,7 @@ const catalogProducts = [
     category: "solar",
     categoryName: "Solar & Power Systems",
     brand: "Phoenix / Osaka Certified Series",
-    image: "images/unnamed17.jpg",
+    image: "images/unnamed12.jpg",
     description: "Spine-cast tall tubular positive plate battery engineered for deep cyclic discharge during prolonged load shedding and off-grid solar operations.",
     specs: {
       "Nominal Capacity": "220 Ah @ C20",
@@ -161,7 +161,7 @@ const catalogProducts = [
     category: "lighting",
     categoryName: "Commercial & Architectural Lighting",
     brand: "Diamond / Philips Certified Line",
-    image: "images/unnamed15.jpg",
+    image: "images/unnamed14.jpg",
     description: "Die-cast aluminum thermal sink with diffused non-glare optics and isolated constant-current driver. Available in Warm White (3000K) and Daylight (6500K).",
     specs: {
       "Wattage": "7 Watt / 12 Watt",
@@ -180,7 +180,7 @@ const catalogProducts = [
     category: "lighting",
     categoryName: "Commercial & Architectural Lighting",
     brand: "Commercial Industrial",
-    image: "images/unnamed3.jpg",
+    image: "images/unnamed2.jpg",
     description: "High-lumen outdoor floodlight with toughened safety glass and 4kV surge suppression. Designed for building exterior illumination, farm yards, and security perimeters.",
     specs: {
       "Power": "100W / 150W High Lumen",
@@ -199,7 +199,7 @@ const catalogProducts = [
     category: "switches",
     categoryName: "Wiring Accessories & Plates",
     brand: "Clipsal / Orange Grade",
-    image: "images/unnamed2.jpg",
+    image: "images/unnamed11.jpg",
     description: "Flame-retardant virgin polycarbonate gang plates with heavy silver-nickel alloy switch contacts. Resistant to arcing, UV discoloration, and mechanical wear.",
     specs: {
       "Configuration": "1-Gang to 8-Gang Modular Plates",
@@ -218,7 +218,7 @@ const catalogProducts = [
     category: "appliances",
     categoryName: "Pumps & Appliances",
     brand: "Golden / Diamond Engineering",
-    image: "images/unnamed11.jpg",
+    image: "images/unnamed12.jpg",
     description: "Heavy cast-iron volute monoblock water pump wound with 100% pure electrolytic copper wire. Delivers high head pressure and flow rate for residential overhead tanks.",
     specs: {
       "Motor Rating": "1.0 Horsepower (750W)",
